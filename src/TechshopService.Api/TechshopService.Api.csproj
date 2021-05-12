@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>83bc522e-3200-4ddf-a164-2f96bf40d33a</UserSecretsId>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TechshopService.Core\TechshopService.Core.csproj" />
+    <ProjectReference Include="..\TechshopService.Infra.Data\TechshopService.Infra.Data.csproj" />
+    <ProjectReference Include="..\TechshopService.Infra.Logger\TechshopService.Infra.Logger.csproj" />
+    <ProjectReference Include="..\TechshopService.Shared\TechshopService.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
